@@ -10,9 +10,6 @@ def restar(a, b):
 def multiplicar(a, b):
     return a * b
 
-def dividir(a, b):
-    return a / b
-
 while True:
     print("Opciones:")
     print("Escribe 'sumar' para sumar dos números")
@@ -39,6 +36,13 @@ while True:
             num2 = int(input("Introduce el segundo número: "))
             print()
             print("El resultado es:", restar(num1, num2))
-            break       
+            break
+    elif opcion == "multiplicar":
+        
+            num1 = int(input("Introduce el primer número: "))
+            num2 = int(input("Introduce el segundo número: "))
+            print()
+            print("El resultado es:", multiplicar(num1, num2))
+            break    
     else:
         print("Opción no válida. Por favor, elige una opción válida.")
