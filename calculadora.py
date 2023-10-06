@@ -28,12 +28,16 @@ while True:
     if opcion == "salir":
         break
     elif opcion == "sumar":
-        
+        try:
             num1 = int(input("Introduce el primer número: "))
             num2 = int(input("Introduce el segundo número: "))
             print()
             print("El resultado es:", sumar(num1, num2))
             break
+        
+        except ValueError:
+            print("Por favor, introduce un valor válido.")
+
     elif opcion == "restar":
         
             num1 = int(input("Introduce el primer número: "))
