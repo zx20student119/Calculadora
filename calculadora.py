@@ -32,6 +32,13 @@ while True:
             num2 = int(input("Introduce el segundo número: "))
             print()
             print("El resultado es:", sumar(num1, num2))
-            break     
+            break
+    elif opcion == "restar":
+        
+            num1 = int(input("Introduce el primer número: "))
+            num2 = int(input("Introduce el segundo número: "))
+            print()
+            print("El resultado es:", restar(num1, num2))
+            break       
     else:
         print("Opción no válida. Por favor, elige una opción válida.")
